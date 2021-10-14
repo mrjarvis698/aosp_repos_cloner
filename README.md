@@ -20,3 +20,7 @@ Now it will echo a terminal msg:
 `✓ Authentication complete. Press Enter to continue...` press enter,
 
 `✓ Logged in as "Your Github Username"` and Done
+
+## Variables In clone.sh
+`git_username_from`,`git_username_to`,`repo_branch`
+Read it Carefully "YOU ARE NOT A NOOB". So, its easy to find what should assign in respective variable.
