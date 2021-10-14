@@ -5,3 +5,18 @@
 
 Copy Paste below in Linux Terminal (ubuntu distro):
 `sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0 && sudo apt-add-repository https://cli.github.com/packages && sudo apt update && sudo apt install gh -y`
+
+## gh Authentication
+Copy Paste: `gh auth login --web`: this will generate 8-digit Code used for authentication.
+
+Now Press Enter to open a link in browser/copy link paste in your local pc for authentication.
+
+Now Github link asks for 8-digit code generated in terminal.
+
+Enter 8-digit code and proceed further, now give Permissions to authenticate.
+
+Now it will echo a terminal msg:
+
+`✓ Authentication complete. Press Enter to continue...` press enter,
+
+`✓ Logged in as "Your Github Username"` and Done
