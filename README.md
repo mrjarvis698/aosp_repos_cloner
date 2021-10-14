@@ -24,3 +24,10 @@ Now it will echo a terminal msg:
 ## Variables In clone.sh
 `git_username_from`,`git_username_to`,`repo_branch`
 Read it Carefully "YOU ARE NOT A NOOB". So, its easy to find what should assign in respective variable.
+
+## Important things
+- `gitpod` variable keep it to `yes`, gitpod can access private repo without ssh and it works on simple http requests.
+
+- `ssh` should be there to clone and push to private repos.
+
+- add an extra empty line in `repo_list` file after adding all repos list.
