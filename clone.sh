@@ -2,12 +2,18 @@
 git_username_from=""
 git_username_to=""
 repo_branch=""
+gitpod="yes/no"
 while read -r repo_name; do
     git clone https://github.com/$git_username_from/$repo_name
     gh repo create $git_username_to/$repo_name --private -y
     cd $repo_name
     git remote rm origin
-    git remote add origin git@github.com:$git_username_to/$repo_name
+    if [ $gitpod == "yes" ]
+    then
+        git remote add origin https://github.com/$git_username_to/$repo_name
+    else
+        git remote add origin git@github.com:$git_username_to/$repo_name
+    fi
     git checkout -b $repo_branch
     if [ $repo_name == "android_frameworks_base" ]
     then
