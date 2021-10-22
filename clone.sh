@@ -1,5 +1,15 @@
 #!/bin/bash
 echo "Okay, Provide Required Details."
+echo "You Running Script From GITPOD?:(yes/no)"
+read gitpod
+if [ $gitpod == "yes" ]
+then echo "Okay You Are Running Script on GITPOD."
+elif [ $gitpod == "no" ]
+then echo "Okay You Are Running Script on Local."
+else
+echo "You are noob."
+set -e
+fi
 echo "You wanted Cloning from User Repos / Organization Repos? (users/orgs):"
 read cloning_mode
 
